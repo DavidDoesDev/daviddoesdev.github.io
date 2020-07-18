@@ -5,12 +5,19 @@
         <meta name="description" content="DESCRIPTION">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>TITLE</title>
-        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         👋 Hi There
+        <div id="count" style="font-size:5em;"></div>
 	<script>
         console.log("👋 Hi There")
+        let count = 0,
+            theDiv = document.getElementById('count');
+        setInterval(function(){
+            theDiv.innerHTML=count;
+            console.log(count);
+            count++;
+        }, 1000);
     </script>
     </body>
 </html>
